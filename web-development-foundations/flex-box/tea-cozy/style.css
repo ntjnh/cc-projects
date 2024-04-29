@@ -1,0 +1,179 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: black;
+    color: seashell;
+    font-family: Helvetica, sans-serif;
+    font-size: 22px;
+    margin: 0;
+    padding: 0;
+    opacity: .9;
+    text-align: center;
+}
+
+img {
+    display: inline-block;
+    max-width: 100%;
+}
+
+header {
+    align-items: center;
+    background: black;
+    border-bottom: 1px solid seashell;
+    display: flex;
+    height: 69px;
+    justify-content: space-between;
+    padding: 0 10px;
+    position: fixed;
+    width: 100%;
+}
+
+header img {
+    height: 50px;
+    width: auto;
+}
+
+header nav ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+header nav ul li {
+    display: inline-block;
+    margin-left: 20px;
+}
+
+header nav ul li a {
+    color: seashell;
+}
+
+main {
+    padding-top: 69px;
+}
+
+main .hero {
+    align-items: center;
+    background: url('img/img-mission-background.jpg') center no-repeat;
+    background-size: cover;
+    display: flex;
+    height: 700px;
+    justify-content: center;
+    margin: 0 auto;
+    max-width: 100%;
+    width: 1200px;
+}
+
+main .hero-inner {
+    background: black;
+    width: 100%;
+}
+
+main .hero-inner h2 {
+    margin: 16px 0 28px;
+}
+
+main .hero-inner h4 {
+    margin: 0 0 8px;
+}
+
+main .features {
+    margin: 0 auto;
+    padding: 80px 0;
+    
+}
+
+main .features h2 {
+    margin-top: 0;
+}
+
+main .features .cards {
+    align-content: space-between;
+    align-items: flex-start;
+    column-gap: 20px;
+    display: flex;
+    flex-flow: row wrap;
+    height: 500px;
+    justify-content: center;
+    margin: 0 auto;
+    max-width: 1000px;
+    width: 100%;
+}
+
+main .features .card img {
+    height: 200px;
+    margin-bottom: 10px;
+    width: 300px;
+}
+
+main .features .card h4 {
+    margin: 0;
+}
+
+main .locations {
+    align-items: center;
+    background: url('img/img-locations-background.jpg') center no-repeat;
+    background-size: cover;
+    display: flex;
+    height: 500px;
+    justify-content: center;
+    max-width: 100%;
+    width: 1200px;
+}
+
+main .locations-inner {
+    width: 100%;
+}
+
+main .locations-inner h2 {
+    margin: 0 0 15px;
+}
+
+main .location-cards {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+    width: 980px;
+}
+
+main .location-card {
+    background-color: black;
+    display: flex;
+    flex-flow: column nowrap;
+    height: 275px;
+    justify-content: space-between;
+    opacity: 1;
+    padding: 24px 0 32px;
+    width: 300px;
+}
+
+main .location-card h3,
+main .location-card p {
+    margin: 0;
+}
+
+main .contact-info {
+    height: 200px;
+}
+
+main .contact-info > div {
+    display: flex;
+    flex-flow: column nowrap;
+    height: 100%;
+    justify-content: space-around;
+}
+
+main .contact-info > div h2,
+main .contact-info > div h5 {
+    margin: 0;
+}
+
+footer {
+    font-size: 16px;
+    font-weight: bold;
+    padding: 0 20px;
+    text-align: left;
+}
