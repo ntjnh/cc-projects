@@ -1,0 +1,7 @@
+.cache/
+.DS_Store
+.vscode/
+build/
+dist/
+node_modules/
+public/
