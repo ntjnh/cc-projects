@@ -119,6 +119,7 @@ main .locations {
     display: flex;
     height: 500px;
     justify-content: center;
+    margin: 0 auto;
     max-width: 100%;
     width: 1200px;
 }
