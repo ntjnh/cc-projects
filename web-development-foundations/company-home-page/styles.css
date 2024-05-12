@@ -17,6 +17,32 @@ footer {
     text-align: center;
 }
 
+header {
+    padding: 1.75rem 0;
+    position: relative;
+}
+
+header .container {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+}
+
+header::after {
+    background-image: linear-gradient(to right, #11eefc, #ff0c81, #ffd43d);
+    content: "";
+    height: 4px;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100vw;
+}
+
+header h1 {
+    margin: 0;
+    text-transform: lowercase;
+}
+
 .container {
     margin: 0 auto;
     max-width: 1024px;
@@ -28,7 +54,7 @@ img {
 
 .mission {
     background-color: #ffd43c;
-    margin: 4rem 0;
+    margin-bottom: 4rem;
     padding: 3rem 0;
     text-align: center;
 }
@@ -43,9 +69,15 @@ img {
 }
 
 .products {
-    display: grid;
-    gap: 20px;
-    grid-template-columns: repeat(3, 1fr);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 4rem;
+}
+
+.products article {
+    border: 1px solid #121212;
+    width: 49%;
 }
 
 .products article img {
@@ -53,33 +85,193 @@ img {
     object-fit: cover;
 }
 
+.products article div {
+    margin-top: -3px;
+    padding: 1.5rem;
+}
+
+.products article div h3 {
+    margin: 0 0 1rem;
+}
+
+.products article div p {
+    font-size: .875rem;
+    margin: 0;
+    max-width: 92%;
+}
+
+.products article:first-child {
+    align-items: flex-end;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    margin-bottom: 19px;
+    width: 100%;
+}
+
+.products article:first-child img {
+    width: 66%;
+}
+
+.products article:first-child div {
+    padding: 0 1rem 1.25rem 2rem;
+    width: 34%;
+}
+
+.products article:first-child div h3 {
+    font-size: 2.25rem;
+    line-height: 1.3;
+    margin: 0 0 1rem;
+}
+
+.products article:first-child div p {
+    font-size: 15px;
+    margin: 0;
+}
+
+.products article:nth-last-child(-n + 3) {
+    margin-top: 1.25rem;
+    width: 32%;
+}
+
+.team {
+    margin-bottom: 4rem;
+}
+
 .team-grid {
-    display: grid;
-    gap: 10px;
-    grid-template-columns: repeat(4, 1fr);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.team-grid article {
+    width: 24%;
 }
 
 .team-grid article img {
     aspect-ratio: 1;
+    display: inline-block;
+    margin-bottom: 1.5rem;
     object-fit: cover;
+}
+
+.team-grid article h3 {
+    margin: 0 0 .5rem;
+}
+
+.team-grid article p {
+    margin: 0;
 }
 
 footer {
     background-color: #222;
     color: #fff;
-    margin-top: 4rem;
+    font-size: .875rem;
     padding: 3rem 0;
 }
 
 footer .contact {
-    margin-bottom: 2rem;
+    margin-bottom: 1.625rem;
+}
+
+footer .contact address {
+    font-style: normal;
+    margin-bottom: 1rem;
 }
 
 footer .contact a {
     color: #10edfc;
-    display: block;
+    display: inline-block;
+    margin-bottom: .375rem;
+}
+
+footer .contact a:hover {
+    color: #ff0c81;
 }
 
 footer p {
     margin: 0;
+}
+
+@media (max-width: 767px) {
+    .container {
+        max-width: 100%;
+        padding-left: 1.5rem;
+        padding-right: 1.5rem;
+    }
+
+    header img {
+        width: 72px;
+    }
+
+    header h1 {
+        font-size: 1.5rem;
+    }
+
+    .products article:first-child {
+        flex-wrap: wrap;
+        width: 100%;
+    }
+
+    .products article:first-child div {
+        padding: 1.5rem;
+    }
+
+    .products article:first-child div h3 {
+        font-size: 18.72px;
+    }
+
+    .products article:first-child div p {
+        font-size: .875rem;
+    }
+
+    .products article,
+    .products article:nth-last-child(-n + 3) {
+        margin-bottom: 1.25rem;
+        margin-top: 0;
+    }
+
+    .products article,
+    .products article:nth-last-child(-n + 3), 
+    .products article:first-child img,
+    .products article:first-child div {
+        width: 100%;
+    }
+
+    .products article div p {
+        max-width: 100%;
+    }
+
+    .mission,
+    .products,
+    .team {
+        margin-bottom: 2rem;
+    }
+
+    .team-grid article {
+        margin-bottom: 1rem;
+        width: 48%;
+    }
+
+    .team-grid article img {
+        margin-bottom: .75rem;
+    }
+
+    .team-grid article h3 {
+        font-size: 1rem;
+    }
+    
+    .team-grid article p {
+        font-size: .875rem;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1199px) {
+    .container {
+        max-width: 92%;
+    }
+
+    .products article:first-child div h3 {
+        font-size: 1.75rem;
+    }
 }
