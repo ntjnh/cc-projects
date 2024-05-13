@@ -193,10 +193,59 @@ header .title h1 {
 body > footer {
     background-color: #121212;
     color: #fff;
+    padding: 2rem 1.5rem;
 }
 
 footer a {
     color: #00eeff;
+}
+
+body > footer address {
+    font-size: .875rem;
+    line-height: 1.25;
+    text-align: center;
+}
+
+body > footer .legal ul {
+    border-bottom: 1px solid #00eeff;
+    border-top: 1px solid #00eeff;
+    margin: 1rem 0;
+    padding: 1rem 0;
+    text-align: center;
+}
+
+body > footer .legal ul li {
+    display: block;
+}
+
+body > footer .legal ul li a {
+    display: block;
+    font-size: .75rem;
+    font-weight: 500;
+    letter-spacing: .05em;
+    padding: 0;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+body > footer .social ul {
+    text-align: center;
+}
+
+body > footer .social ul li {
+    display: inline-block;
+}
+
+body > footer .social ul li a {
+    display: inline-block;
+    font-size: 1.25rem;
+    padding: .5rem;
+}
+
+body > footer .copyright {
+    font-size: .75rem;
+    margin: .5rem 0 0;
+    text-align: center;
 }
 
 @media only screen and (min-width: 576px) {
