@@ -152,14 +152,38 @@ header .title h1 {
     object-fit: cover;
 }
 
-.showcase .grid img:not(:last-child) {
-    /* margin-bottom: 1.5rem; */
-}
-
 .cta {
     background-color: #00a7c0;
     background-image: linear-gradient(to right bottom, #00a7c0, #0d697d);
     color: #fff;
+    text-align: center;
+}
+
+.cta h2 {
+    margin-bottom: 1rem;
+}
+
+.cta p {
+    font-size: .875rem;
+}
+
+.cta button {
+    background-color: #121212;
+    border: 1px solid #121212;
+    border-radius: 4px;
+    color: #fff;
+    cursor: pointer;
+    font-size: .75rem;
+    font-weight: 500;
+    letter-spacing: .05em;
+    text-transform: uppercase;
+    padding: .5rem .75rem;
+}
+
+.cta button:hover {
+    background-color: #fff;
+    border-color: #fff;
+    color: #121212;
 }
 
 body > footer {
