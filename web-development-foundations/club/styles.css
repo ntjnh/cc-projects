@@ -186,6 +186,10 @@ header .title h1 {
     color: #121212;
 }
 
+.single-img img {
+    display: block;
+}
+
 body > footer {
     background-color: #121212;
     color: #fff;
