@@ -94,29 +94,66 @@ header .title h1 {
 }
 
 .about,
-.gallery,
 .showcase,
 .cta {
     padding: 2rem 1.5rem;
 }
 
+.about {
+    text-align: center;
+}
+
+.about h2 {
+    margin-bottom: 1rem;
+}
+
+.about p {
+    font-size: .875rem;
+    margin: 0;
+}
+
+.gallery {
+    background-color: #121212;
+    padding: 1.5rem;
+}
+
+.gallery img {
+    display: block;
+}
 
 .gallery img:not(:last-child) {
-    margin-bottom: .75rem;
+    margin-bottom: 1.5rem;
 }
 
 .showcase blockquote {
     background-color: #00eeff;
-    margin: 0 0 2rem;
+    margin: 0 0 .75rem;
     padding: 1rem 1.25rem;
 }
 
 .showcase blockquote p {
-    
+    font-size: 15px;
+    font-style: italic;
+}
+
+.showcase blockquote footer {
+    text-align: right;
+}
+
+.showcase .grid {
+    display: grid;
+    gap: .75rem;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.showcase .grid img {
+    aspect-ratio: 1;
+    display: block;
+    object-fit: cover;
 }
 
 .showcase .grid img:not(:last-child) {
-    margin-bottom: .75rem;
+    /* margin-bottom: 1.5rem; */
 }
 
 .cta {
