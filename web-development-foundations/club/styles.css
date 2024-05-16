@@ -12,6 +12,7 @@ body {
 }
 
 .container {
+    margin: 0 auto;
     padding: 0;
 }
 
@@ -204,6 +205,10 @@ footer a {
     color: #00eeff;
 }
 
+footer a:hover {
+    color: #fff;
+}
+
 body > footer address {
     font-size: .875rem;
     line-height: 1.25;
@@ -262,12 +267,20 @@ body > footer .copyright {
         font-size: .875rem;
         padding: 1rem .75rem;
     }
+
+    .about p {
+        max-width: 75%;
+    }
+
+    .cta p br {
+        display: none;
+    }
 }
 
 /* Tablets/small laptops */
 @media only screen and (min-width: 768px) {
     header {
-        aspect-ratio: 7 / 3;
+        aspect-ratio: 7 / 4;
     }
 
     header .title h1 br {
@@ -275,8 +288,7 @@ body > footer .copyright {
     }
 
     .container {
-        margin: 0 auto;
-        max-width: 768px;
+        max-width: 720px;
     }
 
     .about,
@@ -290,7 +302,7 @@ body > footer .copyright {
     }
 
     .gallery {
-        padding: 3rem 0;
+        padding: 3rem 1.5rem;
     }
 
     .gallery .container {
@@ -327,7 +339,7 @@ body > footer .copyright {
 
     .showcase .container blockquote div {
         margin: auto;
-        width: 85%;
+        width: 88%;
     }
 
     .showcase .container .grid {
@@ -343,10 +355,6 @@ body > footer .copyright {
         margin-bottom: 1.25rem;
     }
 
-    .cta p br {
-        display: none;
-    }
-
     .cta button {
         font-size: .875rem;
         padding: .75rem 1rem;
@@ -357,11 +365,58 @@ body > footer .copyright {
         object-fit: cover;
         object-position: bottom;
     }
+
+    body > footer .container {
+        align-items: center;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    body > footer address,
+    body > footer .legal,
+    body > footer .social {
+        width: 33%;
+    }
+
+    body > footer address {
+        padding-bottom: .5rem;
+    }
+
+    body > footer .legal ul {
+        border-bottom: none;
+        border-left: 1px solid #00eeff;
+        border-right: 1px solid #00eeff;
+        border-top: none;
+        margin: 0;
+    }
+
+    body > footer .legal ul li a {
+        padding: .125rem 0;
+    }
+
+    body > footer .copyright {
+        border-top: 1px solid #00eeff;
+        margin: 0;
+        padding-top: 1.5rem;
+        width: 100%;
+    }
 }
 
 /* Desktop/laptops plus */
 @media only screen and (min-width: 1024px) {
+    .container {
+        max-width: 960px;
+    }
+
     header {
         aspect-ratio: 7 / 2;
+    }
+}
+
+/* Desktop/laptops plus */
+@media only screen and (min-width: 1400px) {
+    .container {
+        max-width: 1140px;
     }
 }
